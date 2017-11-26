@@ -1,15 +1,12 @@
 
 @import "../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap";
 
-body { 
-    @extend .container;
-    header { @extend .page-header;
-        p { @extend .lead; }
-    }
-}
+body { @extend .container; }
+body > header { @extend .page-header; }
+body > header > p { @extend .lead; }
 
 // columns
-section { @extend .row; }
+new-row { @extend .row; }
 col-12 { @extend .col-sm-12; }
 col-9 { @extend .col-sm-9; }
 col-8 { @extend .col-sm-8; }
@@ -25,9 +22,9 @@ article { @extend .panel; @extend .panel-default;
     footer { @extend .panel-footer; }
 }
 
-// lists
-ul { @extend .list-group; }
-li { @extend .list-group-item; }
+// list groups
+list-group { @extend .list-group; }
+list-group > a { @extend .list-group-item; }
 
 // tables
 table {
