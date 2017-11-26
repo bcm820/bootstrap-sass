@@ -1,0 +1,57 @@
+
+@import "../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap";
+
+body { 
+    @extend .container;
+    header { @extend .page-header;
+        p { @extend .lead; }
+    }
+}
+
+// columns
+section { @extend .row; }
+col-12 { @extend .col-sm-12; }
+col-9 { @extend .col-sm-9; }
+col-8 { @extend .col-sm-8; }
+col-6 { @extend .col-sm-6; }
+col-4 { @extend .col-sm-4; }
+col-3 { @extend .col-sm-3; }
+col-1 { @extend .col-sm-1; }
+
+// panels
+article { @extend .panel; @extend .panel-default;
+    header { @extend .panel-heading; }
+    div { @extend .panel-body; }
+    footer { @extend .panel-footer; }
+}
+
+// lists
+ul { @extend .list-group; }
+li { @extend .list-group-item; }
+
+// tables
+table {
+    @extend .table;
+    @extend .table-striped;
+    @extend .table-bordered;
+    @extend .table-condensed;
+}
+
+// forms
+form {
+    div { @extend .form-group; }
+    input { @extend .form-control; }
+    textarea { @extend .form-control; resize: none; }
+    select { @extend .form-control; }
+}
+
+// Alerts/Validations
+alert-success { @extend .alert; @extend .alert-success; }
+alert-info { @extend .alert; @extend .alert-info; }
+alert-warning { @extend .alert; @extend .alert-warning; }
+alert-danger { @extend .alert; @extend .alert-danger; }
+
+// Buttons
+button { @extend .btn; @extend .btn-default; }
+input[type=submit] { @extend .btn; @extend .btn-default; }
+button-group { @extend .btn-group; @extend .btn-group-justified; }
